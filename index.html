@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+
+    <link rel="icon" href="logo.jpg" sizes="16x16" type="image/gif">
+
+    <title>Campus Bazaar</title>
+
+
+  <style type="text/css">
+
+  .space{
+    height: 300px;
+  }
+
+
+  .navbar{
+    padding: 5px 16vw;
+  }
+    
+  .heading{
+    text-decoration: underline;
+    font-size: 45px;
+    text-align: center;
+  
+  }  
+
+
+  form{
+    margin-left: 10vw;
+   
+  }
+
+  .btn{
+    border-radius: 0;
+  }
+
+  .book_type_nav{
+    margin-top: 12px;
+    background-color: #EDEDED;
+    font-weight: bold;
+  }
+
+  .carousel-item img{
+    height: 30vw;
+  
+  }
+
+
+  .offer-box{
+    margin-left: 13vw ;
+    margin-right:  13vw;
+    text-align: center;
+    margin-top: 3vw;
+  
+  }
+
+  .card{
+    border-radius: 0 ;
+    border: none;
+
+  }
+
+
+  .shop_now{
+    text-decoration: underline;
+    color: black;
+  }
+   
+
+  .book_sort{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .active_book_sort{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .book_show_box{
+    margin: 5px 12vw;
+    padding: 1px 4vw;
+    text-align: center;
+  }
+
+  .book_show_box img{
+    height: 230px;
+    width: 130px;
+  }
+
+  .book_show_box p{
+    font-size: 15px;
+    color: blue;
+    margin-top: 10px;
+  }
+
+  .cut_price{
+    font-size: 15px;
+  }
+
+  footer{
+    text-align: center;
+    color: white;
+    background-image: url("footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 20px;
+    padding-top: 50px;
+  }
+
+  </style>
+ 
+
+  </head>
+
+
+  <body>
+   
+  <ul class="nav justify-content-end" style="margin-right: 15vw;">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Delivery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pay</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Sign In</a>
+    </li>
+   
+  </ul>
+
+
+
+
+   <nav class="navbar navbar-expand-lg navbar-light ">
+  
+      <h1 class="fadeInDown animated heading"><span class="text-muted">e</span>book</h1>
+   
+     <form class="form-inline my-2 my-lg-0 fadeIn animated d-none d-lg-block d-xl-none d-xl-block ">
+      <input class="form-control mr-sm-6" type="search"  aria-label="Search" style="border-radius: 0;">
+      <button class="btn btn-primary my-3 my-sm-0" type="submit" style="border-radius: 0;">Search</button>
+    </form>
+
+    <h2 style="margin-left: 15vw;" class="fadeIn animated  d-none d-lg-block d-xl-none d-xl-block "><i class="fas fa-shopping-cart"></i></h2>
+
+  </nav>
+  
+ <nav class="navbar navbar-expand-lg navbar-light book_type_nav">
+
+
+  
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="      Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <h2 style="margin-left: 10vw;" class="fadeIn animated d-block d-sm-none d-none d-sm-block d-md-none "><i class="fas fa-shopping-cart"></i></h2>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Fiction and Literature <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Thriller & Mystery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kids & Teen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Historical</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Autobiography</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fantasy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Non Fiction</a>
+      </li>  
+
+      <li>
+         <form class="form-inline my-2 my-lg-0 fadeIn animated d-block d-sm-none d-none d-sm-block d-md-none " style="margin: 0;">
+          <input class="form-control mr-sm-6" type="search"  aria-label="Search" style="border-radius: 0;">
+          <button class="btn btn-primary my-3 my-sm-0" type="submit" style="border-radius: 0;">Search</button>
+         </form>
+      </li>
+    </ul>
+   </div>
+</nav>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 20px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-75 mx-auto d-block rounded" src="pic1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-75 mx-auto d-block rounded" src="pic2.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-75 mx-auto d-block rounded" src="pic3.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-75 mx-auto d-block rounded" src="pic4.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+<div class="row offer-box">
+  <div class="col-sm-4" style="margin-bottom: 10px;">
+    <div class="card text-white bg-success">
+      <div class="card-body">
+        <h2>Today's Top 50 eBook </h2>
+        <p>Best books selected by our professionals for you.</p>
+        <h5><a href="" class="shop_now">Shop Now</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4" style="margin-bottom: 10px;">
+    <div class="card text-white bg-warning">
+      <div class="card-body">
+       <h2>Recommended Reading</h2>
+       <p>Best books selected by our professionals for you.</p>
+       <h5><a href="" class="shop_now">Shop Now</a></h5>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-4 ">
+    <div class="card text-white bg-danger">
+      <div class="card-body">
+        <h1 style="font-size: 45px;">-50%</h1>
+        <p>Best books selected by our professionals for you. Now with 50% discount for limited time.</p>
+        <h5><a href="" class="shop_now">Shop Now</a></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr style="margin: 13px 14vw;">
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active_book_sort" href="#">Popular</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link book_sort" href="#">New Arrival</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link book_sort" href="#">Special</a>
+  </li>
+</ul>
+
+
+
+<div class="card book_show_box">
+  <div class="card-body">
+  
+
+  <div class="row" style="margin-bottom: 10px;">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="fifty.jpg" class="mx-auto d-block">
+        <h3>$250 <span class="text-muted cut_price"><del>$300</del></span></h3>
+         <p>Best selling Novel of all time. </p>
+         <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="three_mistakes.jpg" class="mx-auto d-block">
+          <h3>$350 <span class="text-muted cut_price"><del>$450</del></span></h3></h3>
+          <p>Best selling Novel of all time. </p>
+          <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="harry.jpg" class="mx-auto d-block">
+          <h3>$400</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="murder.jpg" class="mx-auto d-block">
+          <h3>$150</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="perfect.jpg" class="mx-auto d-block">
+          <h3>$50</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="life.jpg" class="mx-auto d-block">
+          <h3>$200</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="everything.jpg" class="mx-auto d-block">
+          <h3>$100</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="half.jpg" class="mx-auto d-block">
+          <h3>$130</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+<footer>
+  
+  <h1>Best Books of the Year</h1>
+  <br>
+  <p style="font-weight: bold;">Books are the fellow friend of us with no demands and no complaints<br> they just give us a kind of happiness in the form of<br> improved knowledge, wisdom, information, entertainment and always help in <br>taking the right decisions in life. Here we are providing brief and detailed.
+
+</footer>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
