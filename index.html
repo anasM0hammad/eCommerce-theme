@@ -13,6 +13,9 @@
 
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
+     <!--Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
     <link rel="icon" href="logo.jpg" sizes="16x16" type="image/gif">
 
@@ -84,11 +87,18 @@
     color: black;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 15px;
+    font-size: 17px;
+    cursor: pointer;
   }
 
   .active_book_sort{
     text-decoration: underline;
     font-weight: bold;
+    margin-left: 15px;
+    color: blue;
+    font-size: 17px;
+    cursor: pointer;
   }
 
   .book_show_box{
@@ -157,7 +167,7 @@
       <button class="btn btn-primary my-3 my-sm-0" type="submit" style="border-radius: 0;">Search</button>
     </form>
 
-    <h2 style="margin-left: 15vw;" class="fadeIn animated  d-none d-lg-block d-xl-none d-xl-block "><i class="fas fa-shopping-cart"></i></h2>
+   <a href=""><h2 style="margin-left: 15vw; color: black;" class="fadeIn animated  d-none d-lg-block d-xl-none d-xl-block "><i class="fas fa-shopping-cart"></i></h2></a>
 
   </nav>
   
@@ -169,7 +179,7 @@
       <span class="navbar-toggler-icon"></span>
       </button>
 
-      <h2 style="margin-left: 10vw;" class="fadeIn animated d-block d-sm-none d-none d-sm-block d-md-none "><i class="fas fa-shopping-cart"></i></h2>
+     <a href=""><h2 style="margin-left: 10vw; color: black;" class="fadeIn animated d-block d-sm-none d-none d-sm-block d-md-none "><i class="fas fa-shopping-cart"></i></h2></a>
 
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -268,19 +278,19 @@
 
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active_book_sort" href="#">Popular</a>
+    <p class="active_book_sort" id="popular">Popular</p>
   </li>
   <li class="nav-item">
-    <a class="nav-link book_sort" href="#">New Arrival</a>
+    <p class="book_sort" id="arrival">New Arrival</p>
   </li>
   <li class="nav-item">
-    <a class="nav-link book_sort" href="#">Special</a>
+    <p class="book_sort" id="special">Special</p>
   </li>
 </ul>
 
+<!-- ********* POPULAR BOOKS BOX ********* -->
 
-
-<div class="card book_show_box">
+<div class="card book_show_box fadeIn animated" id="popular_box">
   <div class="card-body">
   
 
@@ -375,6 +385,209 @@
 </div>
 
 
+<!-- END -->
+
+
+
+
+<!-- *********** NEW ARRIVAL BOOKS BOX ************** -->
+
+
+<div class="card book_show_box fadeIn animated" style="display: none;" id="arrival_box">
+  <div class="card-body">
+  
+
+  <div class="row" style="margin-bottom: 10px;">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="outsider.jpg" class="mx-auto d-block">
+        <h3>$250 <span class="text-muted cut_price"><del>$300</del></span></h3>
+         <p>Best selling Novel of all time. </p>
+         <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="reaper.jpg" class="mx-auto d-block">
+          <h3>$350 <span class="text-muted cut_price"><del>$450</del></span></h3></h3>
+          <p>Best selling Novel of all time. </p>
+          <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="marriage.jpg" class="mx-auto d-block">
+          <h3>$400</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="wedding.jpg" class="mx-auto d-block">
+          <h3>$150</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="mars.jpg" class="mx-auto d-block">
+          <h3>$50</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="kiss.jpg" class="mx-auto d-block">
+          <h3>$200</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="hazel.jpg" class="mx-auto d-block">
+          <h3>$100</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="girls.jpg" class="mx-auto d-block">
+          <h3>$130</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- END -->
+
+
+<!-- ******** SPECIAL BOOK BOX ********* -->
+
+<div class="card book_show_box fadeIn animated" style="display: none;" id="special_box">
+  <div class="card-body">
+  
+
+  <div class="row" style="margin-bottom: 10px;">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+        <img src="i_was.jpg" class="mx-auto d-block">
+        <h3>$350 <span class="text-muted cut_price"><del>$300</del></span></h3>
+         <p>Best selling Novel of all time. </p>
+         <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="red.jpg" class="mx-auto d-block">
+          <h3>$450 <span class="text-muted cut_price"><del>$450</del></span></h3></h3>
+          <p>Best selling Novel of all time. </p>
+          <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="fate.jpg" class="mx-auto d-block">
+          <h3>$500</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="nimona.jpg" class="mx-auto d-block">
+          <h3>$150</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="perfect.jpg" class="mx-auto d-block">
+          <h3>$50</h3>
+           <p>Best selling Novel of all time.</p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="life.jpg" class="mx-auto d-block">
+          <h3>$200</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="everything.jpg" class="mx-auto d-block">
+          <h3>$100</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+      <div class="card-body">
+          <img src="half.jpg" class="mx-auto d-block">
+          <h3>$130</h3>
+           <p>Best selling Novel of all time. </p>
+           <button type="button" class="btn btn-success">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<!-- END -->
+
 
 <footer>
   
@@ -385,7 +598,97 @@
 </footer>
 
 
+<script type="text/javascript">
 
+
+  var arrival_click = false;
+  var popular_click = true ;
+  var special_click = false ;
+  
+ $("#arrival").click(function(){
+    
+    $("#arrival_box").css("display", "inline-block") ;
+    $("#popular_box").css("display", "none");
+    $("#special_box").css("display", "none");
+
+   if(arrival_click == false)
+   {
+     $("#arrival").css("color", "blue");
+     $("#arrival").css("text-decoration", "underline");
+   }
+
+     $("#special").css("color", "black");
+     $("#special").css("text-decoration", "none");
+
+     $("#popular").css("color", "black");
+     $("#popular").css("text-decoration", "none");
+
+   
+
+   arrival_click = true ;
+   popular_click= false;
+   special_click= false;
+
+ });
+
+  $("#popular").click(function(){
+    
+    $("#arrival_box").css("display", "none") ;
+    $("#popular_box").css("display", "inline-block");
+    $("#special_box").css("display", "none");
+
+     if(popular_click == false)
+   {
+     $("#popular").css("color", "blue");
+     $("#popular").css("text-decoration", "underline");
+   }
+
+     $("#special").css("color", "black");
+     $("#special").css("text-decoration", "none");
+
+     $("#arrival").css("color", "black");
+     $("#arrival").css("text-decoration", "none");
+
+   
+
+   arrival_click = false ;
+   popular_click= true;
+   special_click= false;
+   
+ });
+
+
+   $("#special").click(function(){
+    
+    $("#arrival_box").css("display", "none") ;
+    $("#popular_box").css("display", "none");
+    $("#special_box").css("display", "inline-block");
+
+
+    if(special_click == false)
+   {
+     $("#special").css("color", "blue");
+     $("#special").css("text-decoration", "underline");
+   }
+
+     $("#arrival").css("color", "black");
+     $("#arrival").css("text-decoration", "none");
+
+     $("#popular").css("color", "black");
+     $("#popular").css("text-decoration", "none");
+
+   
+
+   arrival_click = false ;
+   popular_click= false;
+   special_click= true;
+  
+ });
+
+
+
+
+</script>
 
 
 
