@@ -16,6 +16,9 @@
      <!--Jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script type="text/javascript" src="myscript.js"></script>
+     
+
 
     <link rel="icon" href="logo.jpg" sizes="16x16" type="image/gif">
 
@@ -278,13 +281,13 @@
 
 <ul class="nav justify-content-center">
   <li class="nav-item">
-    <p class="active_book_sort" id="popular">Popular</p>
+    <p class="active_book_sort" id="popular" onclick="popular()">Popular</p>
   </li>
   <li class="nav-item">
-    <p class="book_sort" id="arrival">New Arrival</p>
+    <p class="book_sort" id="arrival" onclick="arrival()">New Arrival</p>
   </li>
   <li class="nav-item">
-    <p class="book_sort" id="special">Special</p>
+    <p class="book_sort" id="special" onclick="special()">Special</p>
   </li>
 </ul>
 
@@ -597,98 +600,13 @@
 
 </footer>
 
-
 <script type="text/javascript">
-
-
-  var arrival_click = false;
-  var popular_click = true ;
-  var special_click = false ;
   
- $("#arrival").click(function(){
-    
-    $("#arrival_box").css("display", "inline-block") ;
-    $("#popular_box").css("display", "none");
-    $("#special_box").css("display", "none");
-
-   if(arrival_click == false)
-   {
-     $("#arrival").css("color", "blue");
-     $("#arrival").css("text-decoration", "underline");
-   }
-
-     $("#special").css("color", "black");
-     $("#special").css("text-decoration", "none");
-
-     $("#popular").css("color", "black");
-     $("#popular").css("text-decoration", "none");
-
-   
-
-   arrival_click = true ;
-   popular_click= false;
-   special_click= false;
-
- });
-
-  $("#popular").click(function(){
-    
-    $("#arrival_box").css("display", "none") ;
-    $("#popular_box").css("display", "inline-block");
-    $("#special_box").css("display", "none");
-
-     if(popular_click == false)
-   {
-     $("#popular").css("color", "blue");
-     $("#popular").css("text-decoration", "underline");
-   }
-
-     $("#special").css("color", "black");
-     $("#special").css("text-decoration", "none");
-
-     $("#arrival").css("color", "black");
-     $("#arrival").css("text-decoration", "none");
-
-   
-
-   arrival_click = false ;
-   popular_click= true;
-   special_click= false;
-   
- });
-
-
-   $("#special").click(function(){
-    
-    $("#arrival_box").css("display", "none") ;
-    $("#popular_box").css("display", "none");
-    $("#special_box").css("display", "inline-block");
-
-
-    if(special_click == false)
-   {
-     $("#special").css("color", "blue");
-     $("#special").css("text-decoration", "underline");
-   }
-
-     $("#arrival").css("color", "black");
-     $("#arrival").css("text-decoration", "none");
-
-     $("#popular").css("color", "black");
-     $("#popular").css("text-decoration", "none");
-
-   
-
-   arrival_click = false ;
-   popular_click= false;
-   special_click= true;
-  
- });
-
-
+ 
 
 
 </script>
+
 
 
 
