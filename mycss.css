@@ -1,0 +1,114 @@
+
+ .space{
+    height: 300px;
+  }
+
+
+  .navbar{
+    padding: 5px 16vw;
+  }
+    
+  .heading{
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold; 
+    font-family: comic sans MS;
+    font-size: 45px;
+  
+  }  
+
+
+  form{
+    margin-left: 10vw;
+   
+  }
+
+  .btn{
+    border-radius: 0;
+  }
+
+  .book_type_nav{
+    margin-top: 12px;
+    background-color: #EDEDED;
+    font-weight: bold;
+  }
+
+  .carousel-item img{
+    height: 30vw;
+  
+  }
+
+
+  .offer-box{
+    margin-left: 13vw ;
+    margin-right:  13vw;
+    text-align: center;
+    margin-top: 3vw;
+  
+  }
+
+  .card{
+    border-radius: 0 ;
+    border: none;
+
+  }
+
+
+  .shop_now{
+    text-decoration: underline;
+    color: black;
+  }
+   
+
+  .book_sort{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .active_book_sort{
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 15px;
+    color: blue;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .book_show_box{
+    margin: 5px 12vw;
+    padding: 1px 4vw;
+    text-align: center;
+  }
+
+  .book_show_box img{
+    height: 230px;
+    width: 130px;
+  }
+
+  .book_show_box p{
+    font-size: 15px;
+    color: blue;
+    margin-top: 10px;
+  }
+
+  .cut_price{
+    font-size: 15px;
+  }
+
+  footer{
+    text-align: center;
+    color: white;
+    background-image: url("footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    margin-top: 20px;
+    padding-top: 50px;
+  }
+
+  </style>
